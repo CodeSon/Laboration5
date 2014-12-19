@@ -8,15 +8,17 @@ import java.io.*; // PrintWriter
 		PrintWriter out = new PrintWriter (System.out, true);
 		
 		// testa en konstruktor och en transformator
-		 Punkt p1 = new Punkt ("A", 3, 4);
-		 Punkt p2 = new Punkt ("B", 5, 6);
-		 out.println (p1 + " " + p2);
+		 Punkt p1 = new Punkt ("Punkt A = ", 3, 4);
+		 Punkt p2 = new Punkt ("Punkt B = ", 5, 6);
+		 out.println (p1 + " , " + p2);
+		
 		 
 		 // testa inspektorer
 		 String n = p1.getNamn ();
 		 int x = p1.getX ();
 		 int y = p1.getY ();
-		 out.println (n + " " + x + " " + y);
+		 out.println ("Man testa inspektorer " + n + " " + x + " , " + y);
+		 
 		 
 		 // testa en kombinator och en komparator
 		 double d = p1.avstand (p2);//whats the distance from p1 to p2

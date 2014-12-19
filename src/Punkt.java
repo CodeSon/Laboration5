@@ -1,4 +1,9 @@
-
+/**colour coding
+ * //String object and objects are black in colour 
+ * /primitive and thats why its maroon
+ * @author David Nartey
+ *
+ */
 public class Punkt {
 	private String name;
 	private int x;
@@ -8,11 +13,15 @@ public class Punkt {
 		this.x = i;
 		this.y =j;
 	}
-
+/**
+ * A Constructor created and copy by value implemented
+ * @param p1
+ */
 	public Punkt(Punkt p1) {// creating identical points
-		this.name = p1.getNamn();
+		this.name = new String(p1.getNamn());// A new string that gets all the characters from another(copy by value)
+		this.name = p1.getNamn();//these to point to the same string so its copy by reference
 		this.x = p1.getX();
-		this.y = p1.getX();
+		this.y = p1.getY();
 	}
 
 	/**
