@@ -19,7 +19,7 @@ public class Punkt {
  */
 	public Punkt(Punkt p1) {// creating identical points
 		this.name = new String(p1.getNamn());// A new string that gets all the characters from another(copy by value)
-		this.name = p1.getNamn();//these to point to the same string so its copy by reference
+		this.name = p1.getNamn();//these two point to the same string so its copy by reference
 		this.x = p1.getX();
 		this.y = p1.getY();
 	}

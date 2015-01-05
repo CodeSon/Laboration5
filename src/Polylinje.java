@@ -44,16 +44,16 @@ public class Polylinje {
 	 public Punkt[] getHorn () {
 		 int antalElement= this.horn.length;//vi vill ha lika många element
 		 Punkt[] referensTillVektor = new Punkt[antalElement];
-		
-	for(int i =0;i<antalElement;i++)
-	
-	{
-		referensTillVektor [i]= new Punkt(this.horn[i]);//skapa en ny punkt med kopia av den
-		
-	}
-		 
+
+		 for(int i =0;i<antalElement;i++)
+
+		 {
+			 referensTillVektor [i]= new Punkt(this.horn[i]);//skapa en ny punkt med kopia av den
+
+		 }
+
 		 return referensTillVektor;}
-	 
+
 	 //retunerear farg
 	 public String getFarg () {
 		return farg;}
@@ -110,7 +110,7 @@ public class Polylinje {
 	  */
 	 public void laggTillFramfor (Punkt horn, String hornNamn)
 	 {
-		// this is an example of copying by reference: Punkt kopieraPunkt= horn;
+		// this is an example of copying by reference: Punkt kopieraPunkt = horn;
 		 
 		
 		 Punkt[] newList = new Punkt[this.horn.length + 1]; // Create a new list which is one larger
