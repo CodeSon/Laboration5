@@ -6,7 +6,7 @@
 public class Polylinje1 {
 	
 	//Här skapar jag en lista av hörn 
-	private Punkt[] horn; //horn is the list and Punkt[] is the type
+	private Punkt[] horn; 
 	
 	//Polylinjens färg
 	private String farg = "svart";
@@ -46,6 +46,7 @@ public class Polylinje1 {
 	  * @return
 	  */
 	 public Punkt[] getHorn () {
+		
 		 return this.horn;
 
 	 }
@@ -92,7 +93,7 @@ public class Polylinje1 {
 	 for (i = 0; i < this.horn.length; i++) { // Iterate over the new list
 		 h[i] = this.horn[i]; //Transfer all the old points
 	 }
-	 h[i] = new Punkt (horn); // Add the new point to the end of the list
+	 h[i] = horn; // Add the new point to the end of the list
 	 
 	 this.horn = h; // Replace the old list
 	 }
@@ -126,8 +127,8 @@ public class Polylinje1 {
 			 {
 				
 				 newList[i]= new Punkt(this.horn[i]);
-				 
-			 }
+			 
+		 }
 			 else
 			 {
 				 

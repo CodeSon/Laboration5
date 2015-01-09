@@ -8,10 +8,12 @@ public class Punkt {
 	private String name;
 	private int x;
 	private int y;
-	public Punkt(String string, int i, int j) {
-		this.name = string;
-		this.x = i;
-		this.y =j;
+	
+	//Creating a point
+	public Punkt(String name, int x, int y) {
+		this.name = name;
+		this.x = x;
+		this.y =y;
 	}
 /**
  * A Constructor created and copy by value implemented
